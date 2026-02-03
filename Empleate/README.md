@@ -1,16 +1,47 @@
-# React + Vite
+# Mi Portafolio Profesional (Empleate)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es un portafolio web personal desarrollado con React y Vite.
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+El sitio web muestra información sobre mí, mis proyectos destacados y repositorios de GitHub. Integra una funcionalidad para generar códigos QR y presentar la información de contacto de manera accesible.
 
-## React Compiler
+## 🚀 Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Puedes ver el proyecto desplegado y funcional en el siguiente enlace:
 
-## Expanding the ESLint configuration
+🔗 **[LINK AL DEPLOY (VERCEL)](AQUÍ_VA_TU_URL)**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📸 Screenshots
+
+| Home Page | Proyectos |
+|-----------|-----------|
+| ![Home](./screenshots/home.png) | ![Projects](./screenshots/projects.png) |
+
+*(Asegúrate de subir capturas de pantalla a una carpeta `screenshots` o actualiza estas rutas)*
+
+## 🛠 Tecnologías Usadas
+
+- **Frontend Framework**: React v19
+- **Build Tool**: Vite
+- **Navegación**: React Router DOM
+- **Utilidades**: qrcode.react (Generación de QR)
+
+## Instalación y Ejecución
+
+1. Clona el repositorio.
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+3. Ejecuta el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+
+## Estructura del Proyecto
+
+- `src/pages`: Contiene las vistas principales (AboutPage, ProjectsPage, ContactPage, etc.).
+- `src/components`: Componentes reutilizables de la interfaz.
+- `src/services`: Integraciones con servicios externos (ej. GitHub API).
+
