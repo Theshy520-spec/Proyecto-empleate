@@ -3,7 +3,6 @@ import GithubProjects from '../components/GithubProjects';
 import FeaturedProjects from '../components/FeaturedProjects';
 
 const ProjectsPage = () => {
-  // CAMBIA ESTO POR TU NOMBRE DE USUARIO DE GITHUB
   const GITHUB_USERNAME = 'Theshy520-spec'; 
 
   const featuredProjects = [

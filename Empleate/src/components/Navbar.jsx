@@ -18,6 +18,16 @@ const Navbar = () => {
             Proyectos
           </Link>
         </li>
+        <li>
+          <Link to="/deep-dive" className={location.pathname === '/deep-dive' ? 'active' : ''}>
+            Deep Dive
+          </Link>
+        </li>
+        <li>
+          <Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>
+            Contacto
+          </Link>
+        </li>
       </ul>
     </nav>
   );

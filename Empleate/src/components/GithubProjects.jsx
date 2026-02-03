@@ -1,9 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useGithubProjects } from '../hooks/useGithubProjects';
 
 const GithubProjects = ({ username }) => {
-  const [projects, setProjects] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [usingFallback, setUsingFallback] = useState(false);
+  const { projects, loading, usingFallback } = useGithubProjects(username);
   const FALLBACK_PROJECTS = [
       {
           id: 101,
@@ -33,43 +31,6 @@ const GithubProjects = ({ username }) => {
           language: 'HTML'
       }
   ];
-
-  useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        setLoading(true);
-        console.log("Intentando obtener repositorios para:", username);
-        
-        const response = await fetch(`https://api.github.com/users/${username}/repos`);
-
-        if (!response.ok) {
-           console.warn(`Error API GitHub: ${response.status} ${response.statusText}`);
-           throw new Error('Fallo en la API'); 
-        }
-
-        const data = await response.json();
-        
-        if (Array.isArray(data) && data.length > 0) {
-            setProjects(data);
-            setUsingFallback(false);
-        } else {
-            setProjects(FALLBACK_PROJECTS);
-            setUsingFallback(true);
-        }
-        
-      } catch (err) {
-        console.error("Error capturado, usando backup:", err);
-        setProjects(FALLBACK_PROJECTS);
-        setUsingFallback(true);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    if (username) {
-      fetchProjects();
-    }
-  }, [username]);
 
   if (loading) return <p className="loading-text">Cargando proyectos de GitHub...</p>;
   
