@@ -10,9 +10,15 @@ El sitio web muestra información sobre mí, mis proyectos destacados y reposito
 
 Puedes ver el proyecto desplegado y funcional en el siguiente enlace:
 
-🔗 **[LINK AL DEPLOY (VERCEL)](AQUÍ_VA_TU_URL)**
+🔗 **[LINK AL DEPLOY (VERCEL)](https://empleate.vercel.app/)**
 
-## 📸 Screenshots
+## � Acceso Móvil
+
+¡Escanea el código QR para visitar el sitio!
+
+<img src="./public/qr-code.png" alt="QR Code" width="200"/>
+
+## �📸 Screenshots
 
 | Home Page | Proyectos |
 |-----------|-----------|
