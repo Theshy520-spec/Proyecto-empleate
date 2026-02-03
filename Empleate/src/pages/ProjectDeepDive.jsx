@@ -1,12 +1,23 @@
 import React from 'react';
+import ImageCarousel from '../components/ImageCarousel';
 
 const ProjectDeepDive = () => {
+  const crmImages = [
+    '/CRM.png',
+    '/CRM1.png',
+    '/CRM2.png',
+    '/CRM3.png',
+    '/CRM4.png'
+  ];
+
   return (
     <div className="page-container deep-dive-page">
       <div className="deep-dive-header">
         <h2>Proyecto en Profundidad: CRM Casa Qian</h2>
         <p className="deep-dive-subtitle">Un análisis técnico detallado del sistema de gestión inmobiliaria</p>
       </div>
+
+      <ImageCarousel images={crmImages} />
 
       {/* Visión General */}
       <section className="deep-dive-section">
