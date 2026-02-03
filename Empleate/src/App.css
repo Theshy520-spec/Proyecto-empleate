@@ -41,7 +41,65 @@
   color: #888;
 }
 
-/* Github Projects Styles */
+/* About Me Styles */
+.about-me {
+  background-color: #242424;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  border: 1px solid #333;
+  text-align: left;
+}
+
+.about-content {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 2;
+  min-width: 300px;
+  line-height: 1.6;
+  color: #e1e1e1;
+}
+
+.about-text strong {
+  color: #646cff;
+}
+
+.skills-container {
+  flex: 1;
+  min-width: 250px;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #646cff;
+}
+
+.skills-container h3 {
+  margin-top: 0;
+  color: #fff;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #333;
+  color: #ccc;
+}
+
+.skills-list li:last-child {
+  border-bottom: none;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -53,7 +111,7 @@
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 15px;
-  background-color: #242424; /* Matching dark theme default in Vite */
+  background-color: #242424; 
   text-align: left;
   transition: transform 0.2s;
 }
@@ -84,14 +142,58 @@
   color: #888;
 }
 
-/* Featured specific styles */
 .project-card.featured {
-  border-color: #646cff; /* Highlight border for featured */
+  border-color: #646cff;
   background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-stack {
+  color: #646cff;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.project-team-badge {
+  display: inline-block;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85em;
+  font-weight: 600;
+  border: 1px solid #34495e;
+}
+
+.team-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.project-members {
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+.project-tech-details {
+  background-color: #2a2a2a;
+  padding: 10px;
+  border-left: 3px solid #646cff;
+  border-radius: 0 4px 4px 0;
+  margin: 10px 0;
+  font-style: italic;
+  font-size: 0.95em;
+  color: #ddd;
 }
 
 .project-tech {
-  margin-top: 15px;
+  margin-top: auto; 
   text-align: left;
 }
 
@@ -114,6 +216,60 @@
   border-radius: 4px;
   font-size: 0.8em;
   border: 1px solid #444;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1a1a1a;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.nav-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #646cff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #e1e1e1;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #333;
+  color: #646cff;
+}
+
+.nav-links a.active {
+  background-color: #646cff;
+  color: white;
+}
+
+.page-container {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 

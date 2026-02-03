@@ -10,7 +10,32 @@ const FeaturedProjects = ({ projects }) => {
                 {project.name}
               </a>
             </h3>
+
+            {project.team && (
+              <div className="team-section">
+                <span className="project-team-badge">👥 {project.team}</span>
+                {project.members && (
+                  <div className="project-members">
+                    <strong>Integrantes:</strong> {project.members.join(', ')}
+                  </div>
+                )}
+              </div>
+            )}
+            
+            {project.techStack && (
+              <div className="project-stack">
+                <strong>Arquitectura:</strong> {project.techStack}
+              </div>
+            )}
+            
             <p>{project.description}</p>
+            
+            {project.techDetails && (
+              <div className="project-tech-details">
+                <p><strong>Análisis Técnico:</strong> {project.techDetails}</p>
+              </div>
+            )}
+
             <div className="project-tech">
               <h4>Tecnologías:</h4>
               <div className="tech-tags">
