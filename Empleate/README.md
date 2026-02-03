@@ -12,11 +12,11 @@ Puedes ver el proyecto desplegado y funcional en el siguiente enlace:
 
 🔗 **[LINK AL DEPLOY (VERCEL)](https://empleate.vercel.app/)**
 
-## � Acceso Móvil
+## 📱 Acceso Móvil
 
 ¡Escanea el código QR para visitar el sitio!
 
-<img src="./public/qr-code.png" alt="QR Code" width="200"/>
+<img src="./public/GuY1CF.png" alt="QR Code" width="200"/>
 
 ## �📸 Screenshots
 
